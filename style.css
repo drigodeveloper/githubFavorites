@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    background: black;
+    font-family: 'Roboto', sans-serif;
+}
+
+#app {
+    max-width: 80rem;
+    margin: 0 auto 12rem;
+}
+
+.sr-only {
+position: absolute;
+width: .1rem;
+height: .1rem;
+padding: 0;
+margin: -1px;
+overflow: hidden;
+clip: rect(0, 0, 0, 0);
+white-space: nowrap;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 11.5rem;
+    margin-bottom: 8rem;
+    
+ }
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+ }
+
+ .search input{
+    padding: 1.6rem;
+    margin-right: .8rem;
+    
+    width: 32rem;
+    height: 4.8rem;
+
+    background: #06181C;
+    border-radius: .5rem;
+    border: none;
+    color: white;
+}
+
+.search button {
+    background: #065E7C;
+    border-radius: .5rem;
+    border: none;
+    width: 17rem;
+    height: 4.8rem;
+    padding: 1.2rem;
+
+    color: white;
+
+    font-weight: bold;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    transition: transform .3s;
+}
+
+.search button:hover {
+    cursor: pointer;
+    background: white;
+    color: #065E7C;
+}
+
+tbody .user {
+    display: flex;
+    gap: 1.6rem;
+    align-items: center;
+}
+
+tbody .user p {
+    margin-bottom: .8rem;
+    font-weight: bold;
+}
+
+td.user img {
+    width: 5.6rem;
+    height: 5.6rem;
+    border-radius: 99rem;
+}
+
+td button {
+    color: #F75A68;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 0 .4rem .2rem;
+
+}
+
+
+table * {
+    font-size: 1.4rem;
+    color: white;
+
+    object-fit: cover;
+}
+
+table th {
+    background-color: #092D38;
+    height: 3.8rem;
+    font-weight: normal;
+    text-align: left;
+    padding: 0 0 0 4rem;
+}
+
+
+table tr {
+    /* border: .2px solid #4A808C; */
+    background-color: #06181C;
+}
+
+table td {
+    padding: 1rem 4rem;
+}
+
+table th:first-child {
+    border-top-left-radius: .5rem;
+}
+
+table th:last-child {
+    border-top-right-radius: .5rem;
+}
+
+table tr:nth-child(odd) {
+    background-color: rgba(6, 22, 27, 0.5);;
+}
